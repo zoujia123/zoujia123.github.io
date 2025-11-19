@@ -1,7 +1,7 @@
 ---
 title: A test about post
 date: 2025-11-19 12:00:00 +0800
-categories: [Image Fusion]
+categories: [DeepLearning, Image Fusion]
 tags: [fusion, test, deeplearning]
 ---
 
