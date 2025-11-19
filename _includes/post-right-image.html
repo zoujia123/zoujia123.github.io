@@ -1,0 +1,63 @@
+<div class="custom-post-ad">
+  <a href="https://your-ad-link.com" target="_blank" title="点击查看详情">
+    <img src="{{ site.baseurl }}/assets/img/my-ad-image.jpg" alt="文章右侧图片，请替换图片">
+  </a>
+  <p class="ad-caption">支持我的工作，请点这里！</p>
+</div>
+
+<style>
+/* ------------------------------------------------ */
+/* 自定义右侧图片样式 - 仅在文章页显示 */
+/* ------------------------------------------------ */
+
+.custom-post-ad {
+    /* 核心定位：将元素浮动到右侧 */
+    float: right; 
+    
+    /* 设定图片容器的最大宽度，一般为文章宽度的20%-30% */
+    width: 200px; 
+    
+    /* 保持与文章内容的间距 */
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+    /* 添加一些视觉上的边框或阴影 */
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    background-color: #fcfcfc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.custom-post-ad img {
+    /* 确保图片自适应容器宽度 */
+    max-width: 100%;
+    height: auto;
+    display: block; /* 移除图片底部不必要的空间 */
+    border-radius: 4px;
+}
+
+.ad-caption {
+    font-size: 0.85em;
+    text-align: center;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* ------------------------------------------------ */
+/* 媒体查询：在小屏幕（手机）上取消浮动，让图片全宽显示在内容上方或下方 */
+/* ------------------------------------------------ */
+@media (max-width: 768px) {
+    .custom-post-ad {
+        /* 取消浮动，恢复正常流 */
+        float: none;
+        /* 宽度占满屏幕 */
+        width: 100%; 
+        /* 取消外边距 */
+        margin-left: 0;
+        /* 居中显示 */
+        text-align: center;
+        /* 增加上下间距 */
+        margin-top: 15px;
+    }
+}
+</style>
